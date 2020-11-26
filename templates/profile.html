@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Profils</h1>
+<dl>
+    <dt>GitHub ID</dt>
+    <dd>{{ data.id }}</dd>
+    <dt>GitHub username</dt>
+    <dd>{{ data.login }}</dd>
+    <dt>Avatars</dt>
+    <dd><img src="{{ data.avatar_url }}"></dd>
+    <dt>GitHub profila saite</dt>
+    <dd><a href="{{ data.html_url }}">{{ data.html_url }}</a></dd>
+</dl>
+
+{% endblock %}

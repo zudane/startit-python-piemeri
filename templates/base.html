@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css"
+        integrity="sha256-oSsWW/ca1ll8OVu2t4EKkyb9lmH0Pkd8CXKXnYP4QvA=" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='site.css') }}" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="">
+    
+    <nav class="level is-mobile has-background-success py-1 px-2">
+        <div class="level-left">
+            <div class="level-item">
+                <a href="https://github.com">
+                    <img src="{{ url_for('static', filename='img/Octocat.jpg') }}" width="50" height="30">
+                </a>    
+            </div>
+        </div>
+        <div class="level-right">
+                {% if login == False %}
+                <div class="level-item buttons">
+                    <a class="button is-warning" href="/login">
+                        Pieslēgties
+                    </a>
+                </div>
+                {% else %}
+                <div class="level-item buttons">
+                    <a class="button is-dark" href="/profile">
+                        <img src={{ avatar }} width="30"
+                            height="30" alt="Profile page">
+                    </a>
+                    <a class="button is-dark" href="/logout">
+                        Iziet
+                    </a>
+                </div>
+                {% endif %}      
+        </div>
+    </nav>
+
+    <section class="content vertical-fill px-2">
+        {% block content %}{% endblock %}
+    </section>
+
+    <section class="level">
+        <div class="container has-text-centered">
+          <p class="">
+            <strong>GitHub auth demo project</strong> by Gundega. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+    </section>
+</body>
+
+</html>
