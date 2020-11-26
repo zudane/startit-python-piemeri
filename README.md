@@ -4,5 +4,6 @@ Piemēri dažādu Python bibliotēku lietošanai
 
 ## Matplotlib - grafiki
 
-- Matplotlib mājas lapa ar piemērie un dokumentāciju <https://matplotlib.org/>
-- Marķieru sarkasts <https://www.w3schools.com/python/matplotlib_markers.asp>
+- Matplotlib mājas lapa ar piemēriem un dokumentāciju <https://matplotlib.org/>
+- Diagrammu galerija ar piemēriem <https://matplotlib.org/gallery/index.html>
+- Marķieru saraksts <https://www.w3schools.com/python/matplotlib_markers.asp>

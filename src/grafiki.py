@@ -52,3 +52,28 @@ def histogramma():
 
     fig.tight_layout()
     plt.show()
+
+
+def zimets():
+    # Balstīts uz https://matplotlib.org/gallery/showcase/xkcd.html
+    plt.xkcd()
+    fig = plt.figure()
+    ax = fig.add_axes((0.1, 0.2, 0.8, 0.7))
+    ax.spines['right'].set_color('none')
+    ax.spines['top'].set_color('none')
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_ylim([-10, 20])
+
+    data = np.ones(100)
+    data[60:] += np.arange(40)
+    print(data)
+    ax.annotate(
+        'StartIT skolotāju kursi',
+        xy=(60, 1), arrowprops=dict(arrowstyle='->'), xytext=(5, 10))
+
+    ax.plot(data)
+
+    ax.set_xlabel('laiks')
+    ax.set_ylabel('manas Python zināšanas')
+    plt.show()
