@@ -10,7 +10,7 @@ def bilzu_info(mape, atvert=False):
             with Image.open(os.path.join(mape,infile)) as im:
                 print(infile, im.format, f"{im.size}x{im.mode}")
                 if atvert:
-                    im.show()
+                    im.rotate(45).show()
         except OSError:
             pass
 
