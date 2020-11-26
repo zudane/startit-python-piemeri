@@ -44,14 +44,10 @@ def histogramma():
     fig, ax = plt.subplots()
 
     # histogramma
-    n, bins, patches = ax.hist(x, num_bins, density=True)
+    ax.hist(x, num_bins, density=True)
 
-    # līnija
-    y = ((1 / (np.sqrt(2 * np.pi) * sigma)) *
-        np.exp(-0.5 * (1 / sigma * (bins - mu))**2))
-    ax.plot(bins, y, '--')
-    ax.set_xlabel('Dati')
-    ax.set_ylabel('Varbūtība')
+    ax.set_xlabel('Intervāls')
+    ax.set_ylabel('Skaits')
     ax.set_title(r'Nejaušu datu histogramma: $\mu=100$, $\sigma=15$')
 
     fig.tight_layout()
