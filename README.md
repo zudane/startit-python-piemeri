@@ -4,5 +4,6 @@ Piemēri dažādu Python bibliotēku lietošanai
 
 ## Pygame
 
-- Labs *tutorial* par dizaina principiem, Python pamatiem un Pygame <https://www.patternsgameprog.com/series/discover-python-and-patterns/>
-- Detalizēti piemēri Pygame funckionalitatei <http://thepythongamebook.com/>
+- Labs, bet vairāku daļu *tutorial* par dizaina principiem, Python pamatiem un Pygame <https://www.patternsgameprog.com/series/discover-python-and-patterns/>
+- Labs, īss, koncentrēts *tutorial* ar gatavu spēli beigās <https://coderslegacy.com/python/python-pygame-tutorial/>
+- Detalizēti piemēri Pygame funckionalitātei <http://thepythongamebook.com/>
