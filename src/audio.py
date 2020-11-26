@@ -2,7 +2,6 @@ import numpy as np
 import simpleaudio as sa
 
 # Dokumentācija: https://simpleaudio.readthedocs.io/
-# Skaņas datnes var atrast, piemēram, šeit - http://soundbible.com/
 
 
 def parbaudam_darbibu():
@@ -21,7 +20,7 @@ def atskano_datni(datne):
     play_obj.wait_done()
 
 
-def piiksteet(frekvence=440, sekundes=3):
+def beep(frekvence=440, sekundes=3):
     """Atskaņo pīkstienu dotā frekvencē un ilgumā
 
     Args:
@@ -47,20 +46,3 @@ def piiksteet(frekvence=440, sekundes=3):
 
     # Pirms iziet no funkcjas, sagaidam atskaņošanas beigas
     play_obj.wait_done()
-
-
-# parbaudam_darbibu()
-
-
-# atskano_datni("clock-chimes-daniel_simon.wav")
-
-# 261.626	294.33	327.03	348.83	392.44	436.04	490.55	523.25
-# piiksteet(261.626, 1)   # DO
-# piiksteet(294.33, 1)    # RE
-# piiksteet(327.03, 1)    # MI
-# piiksteet(348.83, 1)    # FA
-# piiksteet(392.44, 1)    # SOL
-# piiksteet(436.04, 1)    # LA
-# piiksteet(490.55, 1)    # SI
-# piiksteet(523.25, 1)    # DO
-# piiksteet()
